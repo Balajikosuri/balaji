@@ -1,0 +1,83 @@
+#  Make a api for phone number login
+
+POST  http://localhost:8000/login/
+Content-Type: application/json
+
+{"userPhoneNumber":9874561230, "password":"admin@"}
+###
+
+
+# 2. Refer to the tables below, Write a sql query for finding the subjects for each
+# student, the subjects should be order by alphabetically .
+
+# Api 2
+GET http://localhost:8000/customerSubjects/1777
+
+
+
+# # 3. Write a function in node that inserts the following data in mysql , the email should
+# be unique and if the email already exists in the system then the name of the customer
+# will be updated with the new name that is there in the array for that customer.
+
+POST  http://localhost:8000/customers/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUGhvbmVOdW1iZXIiOjk4NzQ1NjEyMzAsImlhdCI6MTY4NzkzODg4NH0.yvu7UgffFWC-hgcRgM7wmgfKQDrx8qSuedirDwauFP0
+
+{
+"email" : "santosh11@yopmail.com" ,
+"name" : ""
+}
+
+
+####
+
+
+# // Add  Users api 3 for 
+
+POST  http://localhost:8000/users/
+Content-Type: application/json
+
+{"userPhoneNumber":9874561230, "password":"admin@2023"}
+###
+
+# ###################
+
+# APi 1
+GET http://localhost:8000/customerSubjects
+###
+
+
+# APi 1/2
+GET http://localhost:8000/customers
+###
+
+# APi 1/3
+GET http://localhost:8000/subjects
+###
+
+
+
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# delete api 
+
+DELETE http://localhost:8000/customers/7/
+
+####
+
+
+
